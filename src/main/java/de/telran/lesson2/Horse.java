@@ -22,6 +22,12 @@ public class Horse {
     public void transport() {
         System.out.println(name + ", horse transported weight: " + weight);
     }
+    public void transport(Integer addWeight){
+        System.out.println(name + ", horse transported weight: " + weight+" add weight "+addWeight);
+    };
+    public void transport(Boolean isRaider, Integer addWeight){
+        System.out.println(name + ", horse transported weight: " + weight+" is Raider? "+isRaider+" add weight "+addWeight);
+    };
 
     public String getName() {
         return name;
@@ -46,4 +52,9 @@ public class Horse {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+//    public Boolean transport() {
+//        System.out.println(name + ", horse transported weight: " + weight);
+//        return true;
+//    }
 }
