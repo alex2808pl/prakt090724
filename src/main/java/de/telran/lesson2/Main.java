@@ -6,11 +6,16 @@ public class Main {
 
         h.run();
         h.transport();
+        h.transport(true,100);
         System.out.println();
+
         Pegas p = new Pegas("Maria", "white", 12, 2);
+
 
         p.run();
         p.transport();
+        p.transport(true,100);
+
         p.fly();
         System.out.println();
 
@@ -25,5 +30,12 @@ public class Main {
         uniPegas.fly();
         uniPegas.fight();
         uniPegas.transport();
+
+
+        Horse h1 = new Pegas("Bucefal","red",80,6);
+        h1.transport();
+        h1.transport(120);
+
+
     }
 }
